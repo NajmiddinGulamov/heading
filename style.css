@@ -5,12 +5,13 @@
     font-family: Arial, sans-serif;
 }
 
-
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    background: white;
 }
 
 header .logo {
@@ -30,36 +31,44 @@ header .contact-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    color: black;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* HERO */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgba(234, 5, 5, 0.974), rgba(234, 5, 5, 0.974)), url('burger-3.png.png') center/cover no-repeat;
     height: 90vh;
     padding: 0 50px;
     color: white;
+    background: linear-gradient(
+        rgba(234, 5, 5, 0.95),
+        rgba(234, 5, 5, 0.95)
+    );
 }
 
 .hero .text {
     max-width: 600px;
 }
 
-.hero .text h1 {
-    font-size: 50px;
+.hero .tagline {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 52px;
     margin-bottom: 20px;
 }
 
-.hero .text p {
+.hero p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.hero .text .order-btn {
+.order-btn {
     background-color: crimson;
     padding: 15px 30px;
     color: white;
@@ -71,5 +80,4 @@ header .contact-btn {
 
 .hero img {
     max-width: 450px;
-    border-radius: 20px;
 }
